@@ -1,13 +1,18 @@
-<?php 
-class Nuevo extends Controller {
+<?php
+class Nuevo extends Controller
+{
     function __construct()
     {
         parent::__construct();
         $this->view->render('nuevo/index');
     }
 
-    function registrarAlumno (){
+    function registrarAlumno()
+    {
         echo "Alumno creado";
-        $this->model->insert();
+        $matricula = $_POST['matricula'];
+        $nombre = $_POST['nombre'];
+        $apellido = $_POST['apellido'];
+        $this->model->insert(['matricula' => $matricula, 'nombre' => $nombre, 'apellido' => $apellido]);
     }
 }

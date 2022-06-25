@@ -11,10 +11,10 @@ class App
         $url = rtrim($url, '/');
         $url = explode('/', $url);
         if(empty($url[0])){
-            $archController = 'controllers/main.php';
+            $archController = 'controllers/login.php';
             require_once  $archController;
-            $controller = new Main();
-            $controller->loadModel('main');
+            $controller = new Login();
+            $controller->loadModel('login');
             return false;
         }
         

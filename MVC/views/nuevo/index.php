@@ -13,9 +13,9 @@
     <main>
         <h2 class="center">Es la pagína Nuevo!</h1>
             <form action="<?php echo constant('URL'); ?>nuevo/registrarAlumno" method="POST">
-                <input type="text" name="matricula"><br>
-                <input type="text" name="nombre"><br>
-                <input type="text" name="apellido"><br>
+                <input type="text" name="matricula" required><br>
+                <input type="text" name="nombre" required><br>
+                <input type="text" name="apellido" required><br>
                 <input type="submit" value="Registrar nuevo alumno">
             </form>
     </main>
