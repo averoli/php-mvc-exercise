@@ -18,8 +18,9 @@ class Login extends Controller
         $email = $_POST['email'];
         $pass = $_POST['password'];
         $success = $this->model->verify(['email' => $email, 'password' => $pass]);
+    
         if ($success == 1){
-            echo "OK";
+           header("Location: ../dashboard");
         } else {
             echo " NOK";
         }

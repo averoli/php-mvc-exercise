@@ -5,6 +5,6 @@ class Consulta extends Controller
     function __construct()
     {
         parent::__construct();
-        $this->view->render('consulta/index');
+        $this->view->render('employes/index');
     }
 }
