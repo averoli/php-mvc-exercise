@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Leave Management System</title>
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo URL ?>assets/css/bootstrap.css">
     <!-- <script defer src="../fontawesome/js/all.min.js"></script> -->
     <script src="https://kit.fontawesome.com/24229652dd.js" crossorigin="anonymous"></script>
-    <script src="./js/dashboard.js" type="module"></script>
-    <script src="./js/automatic.js" type="module"></script>
-    <link rel="stylesheet" href="./vendors/chartjs/Chart.min.css">
-    <link rel="stylesheet" href="./vendors/perfect-scrollbar/perfect-scrollbar.css">
-    <link rel="stylesheet" href="./css/app.css">
+    <script src="<?php echo URL ?>assets/js/automatic.js" type="module"></script>
+    <script src="./js/team.js" type="module"></script>
+    <link rel="stylesheet" href="<?php echo URL ?>assets/vendors/chartjs/Chart.min.css">
+    <link rel="stylesheet" href="<?php echo URL ?>assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="<?php echo URL ?>assets/css/app.css">
     <style type="text/css">
         .notif:hover {
             background-color: rgba(0, 0, 0, 0.1);
@@ -25,12 +25,12 @@
         <div id="sidebar" class='active'>
             <div class="sidebar-wrapper active">
                 <div class="sidebar-header" style="height: 50px;margin-top: -30px">
-                    <div class="logo"><img src="../../assets/images/Assembler-Logo.png"></div>
+                    <div class="logo"><img src="./assets/images/Assembler-Logo.png"></div>
 
                 </div>
                 <div class="sidebar-menu">
                     <ul class="menu">
-                        <li class="sidebar-item active">
+                        <li class="sidebar-item ">
                             <a href="./dashboard-info.html" class='sidebar-link'>
                                 <i class="fa fa-home text-success"></i>
                                 <span>Dashboard</span>
@@ -48,7 +48,7 @@
                                 <span>Add Player</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
+                        <li class="sidebar-item active">
                             <a href="./team.html" class='sidebar-link'>
                                 <i class="fa fa-users text-success"></i>
                                 <span>The Team</span>
@@ -123,92 +123,13 @@
             </nav>
             <div class="main-content container-fluid">
                 <div class="page-title">
-                    <h3>Dashboard</h3>
+                    <h3>Meet the Team</h3>
                 </div>
                 <section class="section">
-                    <div class="row mb-2">
-                        <div class="card-play">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between p-md-1">
-                                    <div class="d-flex flex-row">
-                                        <div id="play-audio" class="align-self-center">
-                                            <i class="fa fa-solid fa-circle-play fa-3x me-4 play-button"
-                                                aria-hidden="true"></i>
-                                        </div>
-                                        <div class="audio-margin">
-                                            <h4 class="TextWelcome">WELCOME TO ASSEMBLER</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-12 mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between p-md-1">
-                                        <div class="d-flex flex-row">
-                                            <div class="align-self-center">
-                                                <i class="fa fa-users text-warning fa-3x me-4"></i>
-                                            </div>
-                                            <div>
-                                                <h4>PLAYERS</h4>
-                                                <h2 id='total-players' class="h1 mb-0">0</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-12 mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between p-md-1">
-                                        <div class="d-flex flex-row">
-                                            <div class="align-self-center" style="width: min-content;">
-                                                <i class="fa-solid fa-laptop-code fa-3x me-4"></i>
-                                            </div>
-                                            <div>
-                                                <h4>FRONTEND</h4>
-                                                <h2 id='frontend' class="h1 mb-0">0</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-12 mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between p-md-1">
-                                        <div class="d-flex flex-row">
-                                            <div class="align-self-center">
-                                                <i class="fa-solid fa-gears fa-3x me-4"></i>
-                                            </div>
-                                            <div>
-                                                <h4>BACKEND</h4>
-                                                <h2 id='backend' class="h1 mb-0">0</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-12 mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between p-md-1">
-                                        <div class="d-flex flex-row">
-                                            <div class="align-self-center">
-                                                <i class="fa-solid fa-user-secret fa-3x me-4"></i>
-                                            </div>
-                                            <div>
-                                                <h4>FULLSTACK</h4>
-                                                <h2 id='fullstack' class="h1 mb-0">0</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="cards-container">
+                        <div id="cards-column" class="cards-column">
+
+
                         </div>
 
                     </div>

@@ -22,7 +22,7 @@ class Login extends Controller
         if ($success == 1){
            header("Location: ../dashboard");
         } else {
-            echo " NOK";
+            header("Location: ../errores");
         }
     }
 }

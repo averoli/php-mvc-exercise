@@ -10,14 +10,14 @@
     <script src="https://kit.fontawesome.com/24229652dd.js" crossorigin="anonymous"></script>
     <script defer src="assets/fontawesome/js/all.min.js"></script>
     <!-- Custom JS -->
-    <script src="./assets/js/index.js" type="module"></script>
-    <link rel="stylesheet" href="./assets/css/app.css">
+    <script src="<?php echo URL ?>assets/js/index.js" type="module"></script>
+    <link rel="stylesheet" href="<?php echo URL ?>assets/css/app.css">
 </head>
 
 <body>
     <!-- <?php
-    //  require_once 'views/header.php' 
-     ?> -->
+            //  require_once 'views/header.php' 
+            ?> -->
 
     <div id="auth">
 
@@ -53,10 +53,10 @@
 
                                     </div>
                                 </div>
-                            
+
 
                                 <div class="clearfix">
-                                    <button class="btn btn-primary float-end" >Login</button>
+                                    <button class="btn btn-primary float-end">Login</button>
                                 </div>
                             </form>
                         </div>
@@ -70,9 +70,7 @@
     <script src="./assets/js/app.js"></script>
 
     <script src="./assets/js/main.js"></script>
-    <!-- <h1 class="center">Bienvenido al sitio!</h1>
 
-    <?php require_once 'views/footer.php' ?> -->
 </body>
 
 </html>
