@@ -21,6 +21,7 @@ class DashboardModel extends Model
                 $item->player = $row['player'];
                 $item->position = $row['position'];
                 $item->age = $row['age'];
+                $item->nationality = $row['nationality'];
 
                 array_push($items, $item);
             };

@@ -119,10 +119,10 @@
                             <table class='table' id="table1">
                                 <thead>
                                     <tr>
+                                        <th>ID</th>
+                                        <th>NAME</th>
+                                        <th>LAST NAME</th>
                                         <th>PLAYER</th>
-                                        <th>NICKNAME</th>
-                                        <th>DORSAL</th>
-                                        <th>TEAM</th>
                                         <th>POSITION</th>
                                         <th>AGE</th>
                                         <th>NATIONALITY</th>
@@ -130,8 +130,21 @@
                                     </tr>
                                 </thead>
                                 <tbody id='dashboard-body'>
-                                    <?php var_dump($this->employee); ?>
-
+                                    <?php foreach ($this->employee as $row) {
+                                        $employe = new Employee();
+                                        $employe = $row;
+                                     ?>
+                                    <tr>
+                                        <td><?php echo $employe->id ?></td>
+                                        <td><?php echo $employe->name ?></td>
+                                        <td><?php echo $employe->lastName ?></td>
+                                        <td><?php echo $employe->player ?></td>
+                                        <td><?php echo $employe->position ?></td>
+                                        <td><?php echo $employe->age ?></td>
+                                        <td><?php echo $employe->nationality ?></td>
+                                        <td> <i id="add-new-user" class="fa-solid fa-user-plus add-new-user"></i> </td>
+                                    </tr>
+                                    <?php  } ?>
                                 </tbody>
                             </table>
                         </div>
