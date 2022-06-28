@@ -37,13 +37,13 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="../../src/dashboard.php" class='sidebar-link'>
+                            <a href="<?php echo URL ?>manageTeam" class='sidebar-link'>
                                 <i class="fa-solid fa-people-group text-success"></i>
                                 <span>Manage Team</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="../../src/employee.php" class='sidebar-link'>
+                            <a href="<?php echo URL ?>employee" class='sidebar-link'>
                                 <i class="fa-solid fa-user-plus text-success"></i>
                                 <span>Add Player</span>
                             </a>
@@ -62,16 +62,13 @@
         <div id="main">
             <nav class="navbar navbar-header navbar-expand navbar-light">
                 <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>
-                <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav d-flex align-items-center navbar-light ms-auto">
                         <li class="dropdown nav-icon">
-                            <a href="#" data-bs-toggle="dropdown"
-                                class="nav-link  dropdown-toggle nav-link-lg nav-link-user">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-link  dropdown-toggle nav-link-lg nav-link-user">
                                 <div class="d-lg-inline-block">
                                     <i data-feather="bell"></i><span class="badge bg-info">2</span>
                                 </div>
@@ -103,8 +100,7 @@
                             </div>
                         </li>
                         <li class="dropdown">
-                            <a href="#" data-bs-toggle="dropdown"
-                                class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                                 <div class="avatar me-1">
                                     <img src="<?php echo URL ?>assets/images/admin.png" alt="" srcset="">
                                 </div>
@@ -114,8 +110,7 @@
                                 <a class="dropdown-item" href="#"><i data-feather="user"></i> Account</a>
                                 <a class="dropdown-item" href="#"><i data-feather="settings"></i> Settings</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="../../src/library/loginController.php"><i
-                                        data-feather="log-out"></i> Logout</a>
+                                <a class="dropdown-item" href="../../src/library/loginController.php"><i data-feather="log-out"></i> Logout</a>
                             </div>
                         </li>
                     </ul>
@@ -141,8 +136,12 @@
     <script src="<?php echo URL ?>assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="<?php echo URL ?>assets/js/app.js"></script>
     <script src="<?php echo URL ?>assets/vendors/chartjs/Chart.min.js"></script>
-    <script src="<?php echo URL ?>assets/vendors/apexcharts/apexcharts.min.js"></script>
-    <script src="<?php echo URL ?>assets/js/main.js"></script>
+    <<<<<<< Updated upstream <script src="<?php echo URL ?>assets/vendors/apexcharts/apexcharts.min.js">
+        </script>
+        =======
+        <script src="<?php echo URL ?>assets/vendors/apexcha rts/apexcharts.min.js"></script>
+        >>>>>>> Stashed changes
+        <script src="<?php echo URL ?>assets/js/main.js"></script>
 </body>
 
 </html>

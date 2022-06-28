@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <script src="https://kit.fontawesome.com/24229652dd.js" crossorigin="anonymous"></script>
-    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <script defer src="../../assets/fontawesome/js/all.min.js"></script>
     <!-- Custom JS -->
     <script src="<?php echo URL ?>assets/js/index.js" type="module"></script>
     <link rel="stylesheet" href="<?php echo URL ?>assets/css/app.css">
@@ -66,10 +66,10 @@
         </div>
 
     </div>
-    <script src="./assets/js/feather-icons/feather.min.js"></script>
-    <script src="./assets/js/app.js"></script>
+    <script src="../../assets/js/feather-icons/feather.min.js"></script>
+    <script src="../../assets/js/app.js"></script>
 
-    <script src="./assets/js/main.js"></script>
+    <script src="../../assets/js/main.js"></script>
 
 </body>
 
