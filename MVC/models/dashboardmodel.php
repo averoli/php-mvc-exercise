@@ -1,5 +1,5 @@
 <?php
-
+include_once 'models/employee.php';
 class DashboardModel extends Model
 {
 
@@ -8,12 +8,12 @@ class DashboardModel extends Model
         parent::__construct();
     }
 
-    public function getUsers()
+    public function get()
     {
         $items = [];
         try {
             $query = $this->db->connect()->query('SELECT * FROM employee');
-            while($row = $query->fetch()){
+            while ($row = $query->fetch()) {
                 $item = new Employee();
                 $item->id = $row['id'];
                 $item->name = $row['name'];
@@ -24,7 +24,7 @@ class DashboardModel extends Model
 
                 array_push($items, $item);
             };
-            var_dump($row);
+            
         } catch (PDOException $e) {
             echo $e;
         }
