@@ -106,7 +106,7 @@
                             <a href="#" data-bs-toggle="dropdown"
                                 class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                                 <div class="avatar me-1">
-                                    <img src="../images/admin.png" alt="" srcset="">
+                                    <img src="<?php echo URL ?>assets/images/admin.png" alt="" srcset="">
                                 </div>
                                 <div class="d-none d-md-block d-lg-inline-block">Hi, Admin</div>
                             </a>
@@ -137,12 +137,12 @@
             </div>
         </div>
     </div>
-    <script src="./js/feather-icons/feather.min.js"></script>
-    <script src="./vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="./js/app.js"></script>
-    <script src="./vendors/chartjs/Chart.min.js"></script>
-    <script src="./vendors/apexcharts/apexcharts.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="<?php echo URL ?>assets/js/feather-icons/feather.min.js"></script>
+    <script src="<?php echo URL ?>assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="<?php echo URL ?>assets/js/app.js"></script>
+    <script src="<?php echo URL ?>assets/vendors/chartjs/Chart.min.js"></script>
+    <script src="<?php echo URL ?>assets/vendors/apexcharts/apexcharts.min.js"></script>
+    <script src="<?php echo URL ?>assets/js/main.js"></script>
 </body>
 
 </html>
